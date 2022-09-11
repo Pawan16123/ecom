@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import {MdPayment} from 'react-icons/md'
 
 export default function ProductPage() {
     let data;
@@ -32,6 +33,7 @@ export default function ProductPage() {
             <p>Rating: {reqProduct?.rating}</p>
             <p>Stock: {reqProduct?.stock}</p>
             <h1>{id} - {reqProduct?.title}</h1>
+            <button className='buyNow'><MdPayment/>Buy Now</button>
         </div>
 
     </div>

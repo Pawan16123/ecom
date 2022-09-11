@@ -32,10 +32,15 @@ section .card{
   flex-direction: column;
   justify-content: space-between;
   width: 30%;
-  height: 400px;
+  /* height: 400px; */
   margin: 1.4rem;
   margin-bottom: 3rem;
+  align-items: center;
   /* border: 1px solid gray; */
+}
+
+section .card_content{
+  width: 400px;
 }
 
 section .card .card_image {
@@ -57,7 +62,7 @@ section .card img {
 
 }
 
-.listButtons button{
+.listButtons button, .buyNow{
   width: 100px;
   height: 30px;
 }
@@ -95,3 +100,4 @@ section .card img {
   font-family: sans-serif;
   line-height: 2;
 }
+
