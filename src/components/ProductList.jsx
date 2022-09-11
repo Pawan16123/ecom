@@ -21,7 +21,7 @@ export default function ProductList() {
         <section className='cards'>
         {productData.map((el)=>{
             return(
-                <div className="card">
+                <div className={`card product_${el.id}`}>
                     <div className="card_image">
                         <img src={el.images[0]} alt={el.title} />
                     </div>
@@ -30,7 +30,7 @@ export default function ProductList() {
                         <p>{el.description}</p>
                         <h1>${el.price}</h1>
                     </div>
-                    <ListButtons/>
+                    <ListButtons productId={el.id}/>
                 </div>
             )
         })}

@@ -3,6 +3,7 @@ import Header from './components/Header';
 import {Routes, BrowserRouter, Route} from "react-router-dom";
 import Cart from './components/Cart';
 import ProductList from './components/ProductList';
+import ProductPage from './components/ProductPage';
 
 function App() {
   return (
@@ -10,10 +11,11 @@ function App() {
       <BrowserRouter>
       <Header/>
           <Routes>
-              <Route path="/cart" element= <Cart/> />
+              <Route exact path="/" element= <ProductList/> />
+              <Route exact path="/cart" element= <Cart/> />
+              <Route exact path="/product/:id" element= <ProductPage/> />
           </Routes>
       </BrowserRouter>
-      <ProductList/>
     </div>
   );
 }
