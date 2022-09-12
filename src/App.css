@@ -101,3 +101,31 @@ section .card img {
   line-height: 2;
 }
 
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  section.cards{
+    flex-direction: column;
+  }
+  section .card{
+    width: 90%;
+    margin: 1.4rem;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  section .card_content {
+    width: 279px;
+  }
+  .productPage{
+    flex-direction: column;
+    text-align: center;
+  }
+  header{
+    padding: 1em 15px;
+  }
+  .subImage{
+    display: none;
+  }
+  .highlightedImage img{
+    width: 90%;
+  }
+}
